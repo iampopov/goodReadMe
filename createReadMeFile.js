@@ -1,5 +1,5 @@
 function getUrl(GH, title, link) {
-    const gHstyleURL = title.toLowerCase().split(' ').join('-');
+    //const gHstyleURL = title.toLowerCase().split(' ').join('-');
     return `https://github.com/${GH}/${link}`;
 }
 
@@ -74,7 +74,7 @@ ${data.test}
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact [${data.GH}](${data.URL}) directly at ${data.email}.`;
+If you have any questions about the repo, open an issue or contact [${data.GH}]() directly at ${data.email}.`;
   }
   
   module.exports = createReadMeFile;

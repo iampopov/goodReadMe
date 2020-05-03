@@ -36,7 +36,8 @@ const input = [
       {
         type: "input",
         name: "URL",
-        message: "the URL to your project?"
+        message: "the URL to your project?",
+        default: 'goodReadMe'
       },
       {
         type: "input",
