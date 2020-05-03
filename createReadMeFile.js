@@ -1,4 +1,15 @@
 
+function getLicense(license, color) {
+    if (license !== 'None') {
+        return `
+    ## License
+
+    License is ${license} standard license.`
+    } else {
+        return ``
+    }
+}
+
 
 function createReadMeFile(data) {
     return `## Description
@@ -30,6 +41,8 @@ function createReadMeFile(data) {
     ## Usage
     
     ${data.usage}
+
+    ${getLicense(data.license, data.color)}
         
     ## Contributing
     

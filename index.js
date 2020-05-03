@@ -47,12 +47,18 @@ const input = [
         message: "Please write a short description of your project",
         default: 'this is an app I developed so I can automate read me file development'
       },
-    //   {
-    //     type: "list",
-    //     name: "license",
-    //     message: "What kind of license should your project have?",
-    //     choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
-    //   },
+      {
+        type: "list",
+        name: "license",
+        message: "What kind of license should your project have?",
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+      },
+      {
+        type: "list",
+        name: "color",
+        message: "What's your favorite color?",
+        choices: ["red", "green", "purple", "black", "magenta"]
+      },
       {
         type: "input",
         name: "installation",
