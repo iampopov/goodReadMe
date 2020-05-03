@@ -1,6 +1,6 @@
 
     # Good README.md generator
-    [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/iampopov/good-readme.md-generator)
+    [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/iampopov/goodReadMe)
     
     ## Description
 
@@ -39,7 +39,7 @@
         
     ## Contributing
     
-    it is open source
+    open source
     
     ## Tests
     
