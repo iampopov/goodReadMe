@@ -1,5 +1,5 @@
 
-function getLicense(license, color) {
+function getLicense(license) {
     if (license !== 'None') {
         return `
     ## License
@@ -42,7 +42,7 @@ function createReadMeFile(data) {
     
     ${data.usage}
 
-    ${getLicense(data.license, data.color)}
+    ${getLicense(data.license)}
         
     ## Contributing
     
