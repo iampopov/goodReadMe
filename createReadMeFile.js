@@ -1,8 +1,12 @@
+// the three helper functions are called from createReadMeFile that we are exporting at the bottom of this document
+
+//helper function to generate the URL
 function getUrl(GH, title, link) {
     //const gHstyleURL = title.toLowerCase().split(' ').join('-');
     return `https://github.com/${GH}/${link}`;
 }
 
+//helper funciton to get the badge and its color via a link (no ajax call is needed for this)
 function getBadge(license, GH, title, color, link) {
     if (license !== 'None') {
         return `[![GitHub license](https://img.shields.io/badge/license-${license}-${color}.svg)](${getUrl(GH, title, link)})`
@@ -10,7 +14,7 @@ function getBadge(license, GH, title, color, link) {
         return ``
     }
 }
-
+//this is a helper function to get license(if selected none the section in markdown will be blank)
 function getLicense(license) {
     if (license !== 'None') {
         return `
@@ -75,7 +79,7 @@ ${data.test}
 ## Questions
 
 If you have any questions about the repo, open an issue or contact [${data.GH}](https://github.com/iampopov/) directly at ${data.email}.`;
-  }
-  
-  module.exports = createReadMeFile;
+}
+
+module.exports = createReadMeFile;
   
