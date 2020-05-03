@@ -23,14 +23,14 @@ const input = [
         type: "input",
         name: "fName",
         message: "Please provide the name for a .md file?",
-        default: 'someting' //perhaps use correct grammar ;)
+        default: 'README'
       },
       //note for validation you can use either npm packages e.g. joi or your own finction (this is optional)
       {
         type: "input",
         name: "email",
         message: "Please type your email?",
-        default: "thisIsMyEmail@myOwnDomain.com",
+        default: "ivantsar@gmail.com",
         validate: validateEmail
       },
       {
