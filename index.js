@@ -3,6 +3,8 @@ const filePath = require('path');
 const inquirer = require('inquirer');
 const createReadMeFile = require('./createReadMeFile');
 
+/* these  are some basic iquirer question. Watch the format! Here is a good article
+on asking questions with inquirer: https://github.com/sameeri/Code-Inquirer/wiki/Asking-questions-away-with-Inquirer!*/
 const input = [
     {
         type: "input",
@@ -58,5 +60,6 @@ const input = [
         name: "contributing",
         message: "What does the user need to know about contributing to the repo?",
       },
-      
+
 ]
+
