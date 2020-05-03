@@ -25,7 +25,7 @@ function getLicense(license) {
 
 function createReadMeFile(data) {
     return `
-    #${data.title}
+    # ${data.title}
     ${getBadge(data.license, data.GH, data.title, data.color)}
     
     ## Description
