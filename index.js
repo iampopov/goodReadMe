@@ -73,7 +73,7 @@ function makeReadMe(name, data) {
 }
 
 function letsGo() {
-    inquirer.prompt(input).then(responses => makeReadMe(responses.fName, createReadMeFile(responses))
+    inquirer.prompt(input).then(responses => makeReadMe(`${responses.fName}.md`, createReadMeFile(responses))
     )
 }
 letsGo()

@@ -1,6 +1,7 @@
 function createReadMeFile(data) {
     return `
-  # ${data}
+  # ${data.GH}
+  ${data.fName}
   
   `;
   }
