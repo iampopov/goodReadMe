@@ -1,6 +1,7 @@
 const fs = require('fs');
 const filePath = require('path');
 const inquirer = require('inquirer');
+//importing our functionality from createReadMeFile.js file:
 const createReadMeFile = require('./createReadMeFile');
 
 /* these  are some basic iquirer question. Watch the format! Here is a good article
