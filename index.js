@@ -63,3 +63,8 @@ const input = [
 
 ]
 
+function letsGo() {
+    inquirer.prompt(input).then(responses => console.log(responses)
+    )
+}
+
