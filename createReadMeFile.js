@@ -1,11 +1,11 @@
-function getUrl(GH, title) {
+function getUrl(GH, title, link) {
     const gHstyleURL = title.toLowerCase().split(' ').join('-');
-    return `https://github.com/${GH}/${gHstyleURL}`;
+    return `https://github.com/${GH}/${link}`;
 }
 
-function getBadge(license, GH, title, color) {
+function getBadge(license, GH, title, color, link) {
     if (license !== 'None') {
-        return `[![GitHub license](https://img.shields.io/badge/license-${license}-${color}.svg)](${getUrl(GH, title)})`
+        return `[![GitHub license](https://img.shields.io/badge/license-${license}-${color}.svg)](${getUrl(GH, title, link)})`
     } else {
         return ``
     }
@@ -26,7 +26,7 @@ function getLicense(license) {
 function createReadMeFile(data) {
     return `
     # ${data.title}
-    ${getBadge(data.license, data.GH, data.title, data.color)}
+    ${getBadge(data.license, data.GH, data.title, data.color, data.URL)}
     
     ## Description
 
