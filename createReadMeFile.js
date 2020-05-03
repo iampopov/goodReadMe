@@ -1,3 +1,15 @@
+function getUrl(GH, title) {
+    const gHstyleURL = title.toLowerCase().split(' ').join('-');
+    return `https://github.com/${GH}/${gHstyleURL}`;
+}
+
+function getBadge(license, GH, title, color) {
+    if (license !== 'None') {
+        return `[![GitHub license](https://img.shields.io/badge/license-${license}-${color}.svg)](${getUrl(GH, title)})`
+    } else {
+        return ``
+    }
+}
 
 function getLicense(license) {
     if (license !== 'None') {
@@ -14,6 +26,7 @@ function getLicense(license) {
 function createReadMeFile(data) {
     return `
     #${data.title}
+    ${getBadge(data.license, data.GH, data.title, data.color)}
     
     ## Description
 
