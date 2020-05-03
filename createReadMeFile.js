@@ -12,7 +12,10 @@ function getLicense(license) {
 
 
 function createReadMeFile(data) {
-    return `## Description
+    return `
+    #${data.title}
+    
+    ## Description
 
     ${data.description}
     

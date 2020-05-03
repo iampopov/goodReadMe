@@ -36,11 +36,12 @@ const input = [
         name: "URL",
         message: "the URL to your project?"
       },
-    //   {
-    //     type: "input",
-    //     name: "title",
-    //     message: "Please type your project's name?"
-    //   },
+      {
+        type: "input",
+        name: "title",
+        message: "Please type your project's name?",
+        default: "Good README.md generator"
+      },
        {
         type: "input",
         name: "description",
