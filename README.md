@@ -51,4 +51,4 @@ npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact [iampopov]() directly at ivantsar@gmail.com.
+If you have any questions about the repo, open an issue or contact [iampopov] directly at ivantsar@gmail.com.
