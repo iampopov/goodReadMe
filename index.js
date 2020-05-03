@@ -69,11 +69,11 @@ const input = [
 ]
 
 function makeReadMe(name, data) {
-    return fs.writeFileSync(path.join(process.cwd(), name), data);
+    return fs.writeFileSync(filePath.join(process.cwd(), name), data);
 }
 
 function letsGo() {
-    inquirer.prompt(input).then(responses => console.log(responses)
+    inquirer.prompt(input).then(responses => makeReadMe(responses.fName, createReadMeFile(responses))
     )
 }
 letsGo()
