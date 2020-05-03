@@ -3,6 +3,12 @@ const filePath = require('path');
 const inquirer = require('inquirer');
 //importing our functionality from createReadMeFile.js file:
 const createReadMeFile = require('./createReadMeFile');
+//this is an example of email validation finction:
+const validateEmail = (email)  =>
+{
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
 
 /* these  are some basic iquirer question. Watch the format! Here is a good article
 on asking questions with inquirer: https://github.com/sameeri/Code-Inquirer/wiki/Asking-questions-away-with-Inquirer!*/
@@ -17,16 +23,19 @@ const input = [
         name: "fName",
         message: "Please provide the name for a .md file?"
       },
-    //   {
-    //     type: "input",
-    //     name: "email",
-    //     message: "Please type your email?"
-    //   },
-    //   {
-    //     type: "input",
-    //     name: "URL",
-    //     message: "the URL to your project?"
-    //   },
+      //note for validation you can use either npm packages e.g. joi or your own finction (this is optional)
+      {
+        type: "input",
+        name: "email",
+        message: "Please type your email?",
+        default: "thisIsMyEmail@myOwnDomain.com",
+        validate: validateEmail
+      },
+      {
+        type: "input",
+        name: "URL",
+        message: "the URL to your project?"
+      },
     //   {
     //     type: "input",
     //     name: "title",

@@ -45,7 +45,7 @@ function createReadMeFile(data) {
     
     ## Questions
     
-    If you have any questions about the repo, open an issue or contact [${data.GH}](${data.url}) directly at ${data.email}.`;
+    If you have any questions about the repo, open an issue or contact [${data.GH}](${data.URL}) directly at ${data.email}.`;
   }
   
   module.exports = createReadMeFile;
