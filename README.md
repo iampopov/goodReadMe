@@ -1,8 +1,7 @@
-
-    # Good README.md generator
-    [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/iampopov/goodReadMe)
+# Good README.md generator
+[![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/iampopov/goodReadMe)
     
-    ## Description
+## Description
 
     this is an app I developed so I can automate read me file development
     
