@@ -11,6 +11,11 @@ const input = [
         name: "GH",
         message: "Please type your GitHub username?"
       },
+      {
+        type: "input",
+        name: "fName",
+        message: "Please provide the name for a .md file?"
+      },
     //   {
     //     type: "input",
     //     name: "email",
@@ -62,6 +67,10 @@ const input = [
     //   },
 
 ]
+
+function makeReadMe(name, data) {
+    return fs.writeFileSync(path.join(process.cwd(), name), data);
+}
 
 function letsGo() {
     inquirer.prompt(input).then(responses => console.log(responses)
