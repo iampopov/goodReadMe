@@ -25,7 +25,7 @@ const input = [
         message: "Please provide the name for a .md file?",
         default: 'README'
       },
-      //note for validation you can use either npm packages e.g. joi or your own finction (this is optional)
+      //note for validation you can use either npm packages e.g. joi or your own function (this is optional)
       {
         type: "input",
         name: "email",
